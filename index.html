@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raiders Connect</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="loginpage">
+    <div id="redbar">
+      <h1 class="headertext">Raiders Connect</h1>
+      <div id="loginform">
+        <form name="login" onSubmit="Login(); return false;" action="#" method="post">
+            <input type='text' name='userid' id='username' placeholder="Username">
+            <input type='password' name='pswrd' id='password' placeholder="Password">
+            <input type='submit' value='Login'>
+        </form>
+      </div>
+    </div>
+
+    <div id="homecontainer">
+      <div id="content">
+        <div id="slideshowcontainer">
+          <div class="text">
+          <h2 class="beforeslideshow">Connect with the Raider Family
+            <br>today!</h2>
+          </div>
+            <div id="slideshow">
+              <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/d116/17/09/29/170212-ea922800-e459-4dc7-b9dd-322d47947def.JPG">
+              <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/cc8b/17/09/29/170851-211e2718-dc8f-42d4-af0c-3e25d1363117.JPG">
+              <img class="mySlides" src="https://s3-us-west-2.amazonaws.com/edlio-images-service/1c95/17/09/29/170444-82280524-b9b5-4da6-9a81-48bba2b86f11.JPG">
+              <script>
+                var PicNum = 0;
+                slide();
+
+                function slide(){
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                  }
+                  PicNum++;
+                  if (PicNum > x.length) {PicNum = 1}
+                  x[PicNum-1].style.display = "block";
+                  setTimeout(slide, 4500);
+                  }
+              </script>
+              <p id="unitOneProject">
+                  Check out my sample profile
+                  <a href="homepage.html" title="CSP 1.16.2 Project">
+                  here</a>
+              </p>
+            </div>
+            <div class="text">
+          <h2 class="afterslideshow">Instantly see what everyone is doing
+            <br>in the Raider Community!</h2>
+          </div>
+        </div>
+
+        <div id="signup">
+          <div id="studentsignup">
+            <div class="signuptext">
+            <h2>Sign Up - It's Easy</h2>
+              <h4>For Students</h4>
+            </div>
+            <div id="signupform">
+            <h6>Don't know your prhs email?
+              <br><a href="prhs_email.html" target=_blank>Click Here</a></h6>
+              <!-- Form script
+              -->
+            </div>
+          </div>
+            <div id="alumnisignup">
+              <div class="signuptext">
+              <h3>For Parents and Alumni...</h3>
+                <p>Do you want to be
+                <br>part of the exclusive
+                <br>Raider media?<a href="request_account.html">Click here</a>
+                <br>and submit a request
+                <br>for your own account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer">
+        <div id="footerlinks">
+          <ul class="links">
+            <li><a href="questions.html">Any Questions?</a></li>
+            <li><a href=http://www.portrichmondhs.org/ target=_blank>Our Website</a></li>
+          </ul>
+        </div>
+        <div id="footertext">
+          <p>Check out our other pages!</p>
+          <div id="socialbadges">
+            <ul class="social">
+              <li><a href="" target=_blank>
+                <img class="badges" alt="Instagram" src="http://pngimg.com/uploads/instagram/instagram_PNG9.png">
+              </a>
+            </li>
+              <li><a href="" target=_blank>
+                <img class="badges" alt="Twitter" src="https://vignette1.wikia.nocookie.net/dusktilldawn/images/1/1a/Twitter_logo.png/revision/latest?cb=20140507210836">
+              </a>
+            </li>
+              <li><a href="" target=_blank>
+                <img class="badges" alt="Blogger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Blogger.svg/2000px-Blogger.svg.png">
+              </a>
+            </li>
+              <li><a href="" target=_blank>
+                <img class="badges" alt="Facebook" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png">
+              </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="ProjectAlert.js"></script>
+  </body>
+</html>
